@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+      <form class="" ction="{{url_for('thankyou')}}"
+ method="post">
+          <fieldset style = "width: 60%">
+            <legend>CheckOut</legend>
+            <p>Item name: <span id = "itemName"></span></p>
+            <br>
+            <p>Item Price: <span id = "itemprice"></span></p>
+            <hr style ="margin:1em;">
+            <label for="un">Username : <input type="text" name="Username"placeholder="type username" id ='un'  value=""></label>
+            <label for="em">Email : <input type="email" name="email"placeholder="type email" id ='em'  value=""></label>
+
+            <input type="submit" name="submit_bt" value="SUBMIT ORDER" style = "margin-top:2em;">
+          </fieldset>
+      </form>
+      <script type="text/javascript">
+        let item = document.querySelector('#itemName');
+        let price = document.querySelector('#itemprice');
+        item.textContent= localStorage.getItem('ProductName1');
+        price.textContent = localStorage.getItem('ProductPrice1');
+      </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="modal.css">
+    <title>Jascharan singh Activity7</title>
+  </head>
+  <body>
+
+
+
+      <h1 class="title">Modal Window</h1>
+      <a href="#modalWindow" class="open">Click here</a>
+      <!--  Modal Window -->
+      <div class="modalBack" id = "modalWindow">
+        <div class="modalfront">
+          <a href="#" class="close"> &#9874;</a>
+          <div class="imgCont">
+            <img src="Images/first.jpeg" alt="">
+          </div>
+          <div class="info">
+            <form class="" action="checkout.html" method="post">
+            <p id= "itemName">Stone</p>
+            <p> 3-in-1 Hair, Face & Body Wash</p>
+            <p>A serene blend of alpine water, lavender and sandalwood in an aromatic, rich-lathering wash</p>
+            <span class="wasPrice">Was $12.50</span>
+            <span class="nowPrice">Now $3.50</span>
+            <hr>
+            <input type="submit" name="" value="Add To Bag" class="add" onclick="passValues();">
+          </form>
+            <script type="text/javascript">
+            function passValues(){
+                let productName = document.querySelector('#itemName').innerHTML;
+                let productPrice = document.querySelector('.nowPrice').innerHTML;
+                localStorage.setItem('ProductName1',productName);
+                localStorage.setItem('ProductPrice1',productPrice);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+.title{
+  background-color: rgb(50, 50, 50);
+  color: lightyellow;
+  padding: 10px;
+  text-align: center;
+}
+.open{
+  background-color: rgb(50 , 50,  50);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: lightyellow;
+
+}
+.open:hover{
+  background-color: lightgray;
+  color: rgb(50 , 50,  50);
+  box-shadow: 0px 0px 5px 3px rgb(50 , 50,  50);
+
+}
+.modalBack{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(50 , 50,  50, 0.5);
+  opacity: 0;
+  pointer-events: none;
+
+}
+.modalBack:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 0.5s;
+}
+.modalfront{
+  background-color: white;
+  height: 400px;
+  width: 600px;
+  position: relative;
+  margin-top: 3%;
+  margin: auto;
+
+}
+.close{
+  background-color: rgb(50 , 50,  50);
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-decoration: none;
+  color: rgb(50 , 50,  50);
+}
+.close:hover{
+  background-color: rgb(50 , 50,  50);
+  color: lightgray;
+}
+.imgCont{
+
+  width: 40%;
+  height: 90%;
+  float: left;
+  margin-top: 6%;
+}
+.imgCont img{
+  height: 100%;
+  width: 100%;
+}
+.info{
+
+  width: 55%;
+  height: 90%;
+  float: left;
+  margin-top: 6%;
+}
+.info p:nth-child(1){
+  font-size: 1.5em;
+
+}
+.info p:nth-child(2){
+  font-size: 0.7em;
+  margin-top: -2em;
+}
+.info p:nth-child(3){
+  margin-top: 5em;
+}
+.wasPrice{
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.nowPrice{
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  color: red;
+}
+.add{
+    background-color: rgb(50 , 50,  50);
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 2em;
+}
+.add:hover{
+  background-color: lightgray;
+  color: rgb(50 , 50,  50);
+}
